@@ -29,7 +29,6 @@ async function handleRequest(
   }, 0);
 
   const resHdrsJson = await stream.source.next();
-  console.log(resHdrsJson.value);
   const resHdrsStr: string[] = JSON.parse(
     new TextDecoder().decode(resHdrsJson.value),
   );
