@@ -1,7 +1,9 @@
 {
   "name": "connect-es-ws",
-  "module": "src/index.ts",
   "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "build": "tsc",
     "format": "biome format --write"
